@@ -29,13 +29,15 @@ export default function App() {
   return (
     <>
       <SafeAreaView style={styles.container}>
-        <Text>Phasma Helper!</Text>
-        <Text>
-          This App is to help guide others through the great game of
-          Phasmaphobia
-        </Text>
-
-        <StatusBar style="auto" />
+        <View style={styles.Title}>
+          <Text style={styles.titleText}>Phasma Helper!</Text>
+          <Text style={styles.titleText}>
+            This App is to help guide others through the great game of
+            Phasmaphobia (Not associated with the developers of the game at
+            all.)
+          </Text>
+        </View>
+        <StatusBar style="auto" color="White" />
 
         <TouchableOpacity
           style={styles.Button}
@@ -76,9 +78,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#231942",
+  },
+  Title: {
     alignItems: "center",
     textAlign: "center",
+  },
+  titleText: {
+    color: "#F5F5F5",
   },
   Button: {
     minWidth: "85%",
@@ -87,11 +94,13 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#000",
     borderRadius: 15,
+    backgroundColor: "#D7C0D0",
   },
   buttonText: {
     fontWeight: "bold",
     fontSize: 30,
     textAlign: "center",
     margin: "auto",
+    color: "#0A0B0A",
   },
 });
