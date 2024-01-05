@@ -9,13 +9,13 @@ import {
   TouchableOpacity,
 } from "react-native";
 
+import { NavigationContainer } from "@react-navigation/native";
+
 export default function App() {
   const handlePressButtonGadgets = () => {
     console.log("Gadgets Button pressed!");
   };
-  const handlePressButtonMaps = () => {
-    console.log("Maps Button pressed!");
-  };
+
   const handlePressButtonUnlockables = () => {
     console.log("Unlockable Button pressed!");
   };
@@ -41,34 +41,37 @@ export default function App() {
 
         <TouchableOpacity
           style={styles.Button}
-          onPress={handlePressButtonGadgets}
+          onPress={() => navigation.navigate("Gadgets")}
         >
           <Text style={styles.buttonText}>Gadgets</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.Button} onPress={handlePressButtonMaps}>
+        <TouchableOpacity
+          style={styles.Button}
+          onPress={() => navigation.navigate("Maps")}
+        >
           <Text style={styles.buttonText}>Maps</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.Button}
-          onPress={handlePressButtonUnlockables}
+          onPress={() => navigation.navigate("Unlockables")}
         >
           <Text style={styles.buttonText}>Unlockables</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.Button}
-          onPress={handlePressButtonGhosts}
+          onPress={() => navigation.navigate("Ghosts")}
         >
           <Text style={styles.buttonText}>Ghosts</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.Button}
-          onPress={handlePressButtonContact}
+          onPress={() => navigation.navigate("Contact")}
         >
-          <Text style={styles.buttonText}>Contact / Donations</Text>
+          <Text style={styles.buttonText}>Contact</Text>
         </TouchableOpacity>
       </SafeAreaView>
     </>
