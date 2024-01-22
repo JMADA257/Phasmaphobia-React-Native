@@ -9,7 +9,7 @@ import {
   Button,
   TouchableOpacity,
 } from "react-native";
-
+import { createDrawerNavigator } from "@react-navigation/drawer";
 
 export default function Home({ navigation }) {
   const handlePressButtonGadgets = () => {
@@ -86,6 +86,10 @@ const styles = StyleSheet.create({
   Title: {
     alignItems: "center",
     textAlign: "center",
+    borderWidth: 1,
+    borderColor: "red", 
+    borderRadius: 10, 
+    padding: 10, 
   },
   titleText: {
     color: "#F5F5F5",
