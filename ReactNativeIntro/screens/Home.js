@@ -1,3 +1,5 @@
+import "react-native-gesture-handler";
+
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import {
@@ -9,7 +11,7 @@ import {
   Button,
   TouchableOpacity,
 } from "react-native";
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 export default function Home({ navigation }) {
   const handlePressButtonGadgets = () => {
@@ -87,9 +89,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     textAlign: "center",
     borderWidth: 1,
-    borderColor: "red", 
-    borderRadius: 10, 
-    padding: 10, 
+    borderColor: "red",
+    borderRadius: 10,
+    padding: 10,
   },
   titleText: {
     color: "#F5F5F5",
