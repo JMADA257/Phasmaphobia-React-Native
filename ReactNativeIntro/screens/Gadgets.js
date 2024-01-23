@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
@@ -13,9 +13,13 @@ import {
 function Gadgets() {
   return (
     <>
-      <Text>Gadgets</Text>
+      <SafeAreaView>
+        <View>
+          <Text>Gadgets</Text>
+        </View>
+      </SafeAreaView>
     </>
-  )
+  );
 }
 
-export default Gadgets
+export default Gadgets;

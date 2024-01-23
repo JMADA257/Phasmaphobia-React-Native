@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
@@ -13,9 +13,13 @@ import {
 function Ghosts() {
   return (
     <>
-      <Text>Ghosts</Text>
+      <SafeAreaView>
+        <View>
+          <Text>Ghosts</Text>
+        </View>
+      </SafeAreaView>
     </>
-  )
+  );
 }
 
-export default Ghosts
+export default Ghosts;

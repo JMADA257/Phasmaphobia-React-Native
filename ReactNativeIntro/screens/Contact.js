@@ -13,7 +13,11 @@ import {
 function Contact() {
   return (
     <>
-      <Text>Contact</Text>
+      <SafeAreaView>
+        <View>
+          <Text>Contact</Text>
+        </View>
+      </SafeAreaView>
     </>
   );
 }

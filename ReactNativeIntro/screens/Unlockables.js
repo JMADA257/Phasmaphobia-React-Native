@@ -13,7 +13,11 @@ import {
 function Unlockables() {
   return (
     <>
-      <Text>Unlockables</Text>
+      <SafeAreaView>
+        <View>
+          <Text>Unlockables</Text>
+        </View>
+      </SafeAreaView>
     </>
   );
 }
