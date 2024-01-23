@@ -8,64 +8,23 @@ import {
   Button,
   TouchableOpacity,
 } from "react-native";
+import HomeScreen from "./screens/Home";
+import GadgetsScreen from "./screens/Gadgets";
+import MapsScreen from "./screens/Maps";
+import UnlockablesScreen from "./screens/Unlockables";
+import GhostsScreen from "./screens/Ghosts";
+import ContactScreen from "./screens/Contact";
+
 import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
 const Drawer = createDrawerNavigator();
 
-const HomeScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Home Screen</Text>
-    </View>
-  );
-};
-
-const GadgetsScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Gadgets Screen</Text>
-    </View>
-  );
-};
-
-const MapsScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Maps Screen</Text>
-    </View>
-  );
-};
-
-const UnlockablesScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Unlockables Screen</Text>
-    </View>
-  );
-};
-
-const GhostsScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Ghosts Screen</Text>
-    </View>
-  );
-};
-
-const ContactScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Contact Screen</Text>
-    </View>
-  );
-};
-
 export default function App() {
   return (
     <>
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Navigator initialRouteName="HomeScreen">
           <Drawer.Screen name="HomeScreen" component={HomeScreen} />
           <Drawer.Screen name="GadgetsScreen" component={GadgetsScreen} />
           <Drawer.Screen name="MapsScreen" component={MapsScreen} />

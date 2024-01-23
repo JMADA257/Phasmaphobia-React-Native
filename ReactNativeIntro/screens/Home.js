@@ -11,7 +11,6 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-
 export default function Home({ navigation }) {
   const handlePressButtonGadgets = () => {
     console.log("Gadgets Button pressed!");
@@ -33,51 +32,53 @@ export default function Home({ navigation }) {
   return (
     <>
       <SafeAreaView style={styles.container}>
-        <View style={styles.Title}>
-          <Text style={styles.titleText}>Phasma Helper!</Text>
-          <Text style={styles.titleText}>
-            This App is to help guide others through the great game of
-            Phasmaphobia (Not associated with the developers of the game at
-            all.)
-          </Text>
+        <View style={styles.contentContainer}>
+          <View style={styles.Title}>
+            <Text style={styles.titleText}>Phasma Helper!</Text>
+            <Text style={styles.titleText}>
+              This App is to help guide others through the great game of
+              Phasmaphobia (Not associated with the developers of the game at
+              all.)
+            </Text>
+          </View>
+          <StatusBar style="auto" color="White" />
+
+          <TouchableOpacity
+            style={styles.Button}
+            onPress={() => navigation.navigate("Gadgets")}
+          >
+            <Text style={styles.buttonText}>Gadgets</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.Button}
+            onPress={() => navigation.navigate("Maps")}
+          >
+            <Text style={styles.buttonText}>Maps</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.Button}
+            onPress={() => navigation.navigate("Unlockables")}
+          >
+            <Text style={styles.buttonText}>Unlockables</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.Button}
+            onPress={() => navigation.navigate("Ghosts")}
+          >
+            <Text style={styles.buttonText}>Ghosts</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.Button}
+            onPress={() => navigation.navigate("Contact")}
+          >
+            <Text style={styles.buttonText}>Contact</Text>
+          </TouchableOpacity>
         </View>
-        <StatusBar style="auto" color="White" />
-
-        <TouchableOpacity
-          style={styles.Button}
-          onPress={() => navigation.navigate("Gadgets")}
-        >
-          <Text style={styles.buttonText}>Gadgets</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          style={styles.Button}
-          onPress={() => navigation.navigate("Maps")}
-        >
-          <Text style={styles.buttonText}>Maps</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          style={styles.Button}
-          onPress={() => navigation.navigate("Unlockables")}
-        >
-          <Text style={styles.buttonText}>Unlockables</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          style={styles.Button}
-          onPress={() => navigation.navigate("Ghosts")}
-        >
-          <Text style={styles.buttonText}>Ghosts</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          style={styles.Button}
-          onPress={() => navigation.navigate("Contact")}
-        >
-          <Text style={styles.buttonText}>Contact</Text>
-        </TouchableOpacity>
-      </SafeAreaView>{" "}
+      </SafeAreaView>
     </>
   );
 }
