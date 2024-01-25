@@ -24,16 +24,16 @@ export default function App() {
   return (
     <>
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName="HomeScreen">
-          <Drawer.Screen name="HomeScreen" component={HomeScreen} />
-          <Drawer.Screen name="GadgetsScreen" component={GadgetsScreen} />
-          <Drawer.Screen name="MapsScreen" component={MapsScreen} />
+        <Drawer.Navigator initialRouteName="Home">
+          <Drawer.Screen name="Home" component={HomeScreen} />
+          <Drawer.Screen name="Gadgets" component={GadgetsScreen} />
+          <Drawer.Screen name="Maps" component={MapsScreen} />
           <Drawer.Screen
-            name="UnlockablesScreen"
+            name="Unlockables"
             component={UnlockablesScreen}
           />
-          <Drawer.Screen name="GhostsScreen" component={GhostsScreen} />
-          <Drawer.Screen name="ContactScreen" component={ContactScreen} />
+          <Drawer.Screen name="Ghosts" component={GhostsScreen} />
+          <Drawer.Screen name="Contact" component={ContactScreen} />
         </Drawer.Navigator>
       </NavigationContainer>
     </>
@@ -42,8 +42,9 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    borderColor: "red",
+    backgroundColor: "#231942",
   },
+
   title: {
     borderColor: "red",
   },
