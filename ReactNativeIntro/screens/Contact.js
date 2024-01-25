@@ -31,6 +31,7 @@ function Contact() {
           </Text>
 
           <Button
+            style={styles.emailText}
             onPress={() => Linking.openURL("mailto:support@example.com")}
             title="PhasmaGuide1812@outlook.com"
           />
@@ -60,6 +61,13 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   questionText: {
+    color: "#F5F5F5",
+    fontSize: 24,
+    textAlign: "center",
+    alignItems: "center",
+    marginTop: 50,
+  },
+  emailText: {
     color: "#F5F5F5",
     fontSize: 24,
     textAlign: "center",
