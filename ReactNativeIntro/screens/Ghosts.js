@@ -23,7 +23,7 @@ export default function Ghosts() {
             </Text>
           </View>
           <View>
-            <ScrollView>
+            <ScrollView contentContainerStyle={styles.scrollViewContainer}>
               <Text style={styles.ghostText}>Banshee</Text>
               <Text style={styles.ghostText}>Demon</Text>
               <Text style={styles.ghostText}>Deogen</Text>
@@ -72,6 +72,13 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: "center",
     alignItems: "center",
+  },
+  contentContainer: {
+    flex: 1,
+    padding: 10,
+  },
+  scrollViewContainer: {
+    flexGrow: 1,
   },
   ghostText: {
     fontSize: 24,

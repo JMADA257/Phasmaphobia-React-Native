@@ -11,7 +11,6 @@ import {
 import HomeScreen from "./screens/Home";
 import GadgetsScreen from "./screens/Gadgets";
 import MapsScreen from "./screens/Maps";
-import UnlockablesScreen from "./screens/Unlockables";
 import GhostsScreen from "./screens/Ghosts";
 import ContactScreen from "./screens/Contact";
 
@@ -28,10 +27,6 @@ export default function App() {
           <Drawer.Screen name="Home" component={HomeScreen} />
           <Drawer.Screen name="Gadgets" component={GadgetsScreen} />
           <Drawer.Screen name="Maps" component={MapsScreen} />
-          <Drawer.Screen
-            name="Unlockables"
-            component={UnlockablesScreen}
-          />
           <Drawer.Screen name="Ghosts" component={GhostsScreen} />
           <Drawer.Screen name="Contact" component={ContactScreen} />
         </Drawer.Navigator>
