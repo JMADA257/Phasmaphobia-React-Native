@@ -10,8 +10,10 @@ import {
   TouchableOpacity,
   ScrollView,
 } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import Banshee from "./Ghosts/Banshee";
 
-export default function Ghosts() {
+export default function Ghosts({ navigation }) {
   return (
     <>
       <SafeAreaView style={styles.container}>
@@ -24,7 +26,10 @@ export default function Ghosts() {
           </View>
           <View>
             <ScrollView contentContainerStyle={styles.scrollViewContainer}>
-              <Text style={styles.ghostText}>Banshee</Text>
+              <Button
+                title="Click here to see more about the Banshee"
+                onPress={() => navigation.navigate("Banshee")}
+              />
               <Text style={styles.ghostText}>Demon</Text>
               <Text style={styles.ghostText}>Deogen</Text>
               <Text style={styles.ghostText}>Goryo</Text>
